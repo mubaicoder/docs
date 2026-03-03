@@ -6,15 +6,13 @@ OpenSpec 是一种为 AI 编码助手设计的 **规范驱动开发（Spec-drive
 
 github: [https://github.com/Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)
 
-## 安装和使用方法
+## 安装
 
-### 安装
-
-#### 先决条件
+### 先决条件
 
 Node.js>=v20.19.0
 
-#### 安装命令
+### 安装命令
 
 ```shell
 # 全局安装
@@ -24,7 +22,8 @@ npm install -g @fission-ai/openspec@latest
 openspec --version
 ```
 
-#### 初始化
+### 初始化
+
 ```shell
 # 进行项目目录
 cd my-project
@@ -33,30 +32,33 @@ cd my-project
 openspec init
 ```
 
-### 使用方法
+## 使用方法
 
 进入AI编辑器如`claude code`、 `qwen code` 等等，我这里使用的claude
 
-```
+```shell
 # 安装claude（如已安装可跳过）
 npm install -g @anthropic-ai/claude-code
 
 # 进入claude
 claude
 ```
-#### 起草提案
+
+### 起草提案
 
 ```plain
 /openspec.proposal <需求>
 ```
 
 举例：
+
 ```plain
 /openspec.proposal 帮我在`index.vue`中添加一个todolist功能，数据记录在浏览器中
 ```
+
 AI会创建一个包含 proposal.md, tasks.md 和规范增量文件的变更文件夹 openspec/changes/add-todo-list/。
 
-#### 验证与审查
+### 验证与审查
 
 使用命令检查和审查生成的提案。
 
@@ -71,16 +73,17 @@ openspec validate add-profile-filters
 openspec show add-profile-filters
 ```
 
-#### 完善规范
+### 完善规范
 
 继续和AI对话，举例：
 
 ```plain
 最多可以保存30条数据，最长可以保存60天
 ```
+
 AI 会根据您的要求编辑 spec.md 和 tasks.md 文件。
 
-#### 实施变更
+### 实施变更
 
 当规范确认无误后，让 AI 开始编码：
 
@@ -90,7 +93,7 @@ AI 会根据您的要求编辑 spec.md 和 tasks.md 文件。
 
 AI 会根据 tasks.md 中的任务列表开始实现功能，并标记已完成的任务。
 
-#### 归档变更
+### 归档变更
 
 当所有任务完成后，归档变更：
 
@@ -100,8 +103,7 @@ AI 会根据 tasks.md 中的任务列表开始实现功能，并标记已完成�
 
 AI 会将 changes 目录下的变更移动到 archive/ 目录，并更新主规范。
 
-
-### 常用命令参考
+## 常用命令
 
 ```shell
 # 查看活动的变更文件夹

@@ -166,7 +166,7 @@ docker build -t 镜像名称:tag . (最后一个点不要忘掉，表示当前�
 docker build -t nginx-web-html:1.0.0 .
 ```
 
-3、`Dockerfile`举例
+`Dockerfile`举例
 
 ```dockerfile
 FROM nginx

@@ -6,7 +6,7 @@
 
 [https://ollama.com/](https://ollama.com/)
 
-## 命令
+## 常用命令
 
 ```shell
 # 启动
@@ -63,5 +63,6 @@ ollama run deepseek-r1:32b
 
 安装`Continue`插件，使用快捷键 `Cmd+L` 打开对话框，切换模型
 
-## 参考 
+## 参考
+
 [在 Mac 上使用 VS Code、Continue 和 Ollama + Qwen2.5-Coder 搭建免费的本地 AI 编程助手](https://www.liuxiao.org/2024/09/%E5%9C%A8-mac-%E4%B8%8A%E4%BD%BF%E7%94%A8-vs-code%E3%80%81continue-%E5%92%8C-ollama-qwen2-5-coder-%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0-ai-%E7%BC%96%E7%A8%8B%E5%8A%A9%E6%89%8B/)

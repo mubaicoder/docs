@@ -1,10 +1,8 @@
 # Django
 
-## 官网
+- [Django](https://docs.djangoproject.com/zh-hans/4.1/contents/)
 
-[Django](https://docs.djangoproject.com/zh-hans/4.1/contents/)
-
-[DRF](https://www.django-rest-framework.org/)
+- [DRF](https://www.django-rest-framework.org/)
 
 ## 命令
 

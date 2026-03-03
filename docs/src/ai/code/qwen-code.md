@@ -14,6 +14,6 @@ qwen --version
 
 在系统中添加以下环境变量
 
-`OPENAI_BASE_URL`
-`OPENAI_API_KEY`
-`OPENAI_MODEL`
+- `OPENAI_BASE_URL`
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL`

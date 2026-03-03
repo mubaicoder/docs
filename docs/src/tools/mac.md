@@ -18,11 +18,11 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # 配置，直接按照安装完成后的提示配置
-(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/cyan/.zprofile
+(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/mubai/.zprofile
 eval "$(/usr/local/bin/brew shellenv)"
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/cyan/.zprofile
-echo 'export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"' >> /Users/cyan/.zprofile
-echo 'export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"' >> /Users/cyan/.zprofile
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/mubai/.zprofile
+echo 'export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"' >> /Users/mubai/.zprofile
+echo 'export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"' >> /Users/mubai/.zprofile
 
 
 # 不需要如下操作
