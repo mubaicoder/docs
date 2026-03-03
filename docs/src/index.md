@@ -23,3 +23,6 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+## Contact me
+
+![wechat](./../public/assets/wechat.jpg)
