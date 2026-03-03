@@ -22,7 +22,7 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
-## Contact me
-
-![wechat](./../public/assets/wechat.jpg)
+<script setup>
+import ContactMeComponent from './../components/ContactMeComponent.vue'
+</script>
+<ContactMeComponent />
