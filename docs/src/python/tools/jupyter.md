@@ -14,7 +14,7 @@ conda install -c conda-forge jupyterlab-language-pack-zh-CN
 jupyter notebook
 ```
 
-打开 [http://localhost:8888/](http://localhost:8888/)
+打开 `http://localhost:8888/`
 
 ```shell
 # 如果报jupyterlab相关的错，可以将jupyterlab重新安装一下

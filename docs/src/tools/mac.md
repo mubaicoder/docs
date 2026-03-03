@@ -1,8 +1,8 @@
 # Mac
 
-## 1、基础
+## 基础
 
-### 1.1、brew
+### brew
 
 安装参考：https://blog.csdn.net/rockvine/article/details/121895416
 
@@ -47,7 +47,7 @@ eval "$(/usr/local/Homebrew/bin/brew shellenv)"
 
 ```
 
-### 1.2、docker
+### docker
 
 https://www.runoob.com/docker/macos-docker-install.html
 
@@ -56,13 +56,13 @@ https://www.runoob.com/docker/macos-docker-install.html
 /Applications/Docker.app/Contents/MacOS/Docker
 ```
 
-### 1.3、ssh
+### ssh
 
 设置 共享 勾选“远程登录” 勾选“允许远程用户对磁盘进行完全访问”
 
-## 2、Java
+## Java
 
-### 2.1、java
+### java
 
 参考：
 
@@ -72,13 +72,13 @@ https://blog.csdn.net/weixin_44143114/article/details/126807828
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-1.8.jdk/Contents/Home # 在.bash_profile中添加这一行
 ```
 
-### 2.2、idea
+### idea
 
 https://baijiahao.baidu.com/s?id=1743957406665861124&wfr=spider&for=pc
 
-## 3、前端
+## 前端
 
-### 3.1、nvm
+### nvm
 
 参考：https://blog.csdn.net/ForeverMyheart/article/details/127203419
 
@@ -95,9 +95,9 @@ export NVM_DIR="$HOME/.nvm"
 source ~/.bash_profile
 ```
 
-## 4、python
+## python
 
-### 4.1、Anaconda
+### Anaconda
 
 https://www.likecs.com/show-451890.html
 
@@ -108,17 +108,17 @@ conda install --cask anaconda
 export PATH="/usr/local/anaconda3/bin:$PATH" # 在.bash_profile中添加这一行
 ```
 
-### 4.2、pyenv
+### pyenv
 
 http://www.tuohang.net/article/244919.html
 
-### 4.3、pycharm
+### pycharm
 
 https://baijiahao.baidu.com/s?id=1743957406665861124&wfr=spider&for=pc
 
-## 5、工具
+## 工具
 
-### 5.1、brew
+### brew
 
 ```shell
 brew search xxx # 搜索软件
@@ -132,8 +132,3 @@ brew cleanup # 清理不需要的版本及其安装缓存
 brew upgrade # 升级所有
 brew upgrade xxx # 升级软件
 ```
-
-
-
-
-

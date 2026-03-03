@@ -41,10 +41,10 @@ sudo apt-get install git
 ## 开发环境
 
 ### `miniconda`
-[miniconda](/python/tools.html#miniconda)
+[miniconda](/python/tools/miniconda)
 
 ### `pyenv`
-[pyenv](/python/tools.html#linux安装)
+[pyenv](/python/tools/pyenv)
 
 
 ### `Node.js`
@@ -117,9 +117,9 @@ sudo apt-get install gparted
 
 安装后，虚拟机和主机可能不在同一个网段，需要虚拟机关机后设置网卡
 
-![An image](./../.vuepress/public/assets/img/ubuntu-virtualbox-network-1.png)
+![An image](./../../public/assets/ubuntu-virtualbox-network-1.png)
 
-![An image](./../.vuepress/public/assets/img/ubuntu-virtualbox-network-2.png)
+![An image](./../../public/assets/ubuntu-virtualbox-network-2.png)
 
 [https://zhuanlan.zhihu.com/p/394468677](https://zhuanlan.zhihu.com/p/394468677)
 

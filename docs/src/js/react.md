@@ -493,7 +493,7 @@ Absolute route path "/*" nested under path "/user" is not valid.
 
 ### 架构
 
-![img](./../.vuepress/public/assets/img/12972541-bf7e95c93cd4e36c.png)
+![img](./../../public/assets/12972541-bf7e95c93cd4e36c.png)
 
 ### 命令
 
