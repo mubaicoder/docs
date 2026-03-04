@@ -10,8 +10,8 @@
   </div>
 </template>
 <script setup>
-import wechat from './../public/contact-me-wechat.jpg'
-import qq from './../public/contact-me-qq.jpg'
+import wechat from './../public/contact-me-wechat.png'
+import qq from './../public/contact-me-qq.png'
 </script>
 <style scoped>
 .contact-container {
