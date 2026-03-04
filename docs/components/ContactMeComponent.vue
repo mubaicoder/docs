@@ -17,6 +17,7 @@ import qq from './../public/contact-me-qq.png'
 .contact-container {
   display: flex;
   justify-content: center;
+  width: 66.67%;
 }
 
 .image-container {

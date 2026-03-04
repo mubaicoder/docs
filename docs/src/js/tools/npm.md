@@ -56,7 +56,11 @@ npm config get key # 读取值
 npm config delete key # 删除
 npm config list # 显示当前配置
 npm config set registry https://registry.npmmirror.com # 设置淘宝镜像
-npm config set proxy localhost:10809 # 添加代理
+# 添加代理
+npm config set proxy http://localhost:10809 
+npm config set https-proxy https://localhost:10809
+npm config delete proxy
+npm config delete https-proxy
 npm config set proxy null # 去掉代理 npm err! Error: connect ECONNREFUSED 127.0.0.1:10809
 ```
 

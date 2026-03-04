@@ -73,6 +73,10 @@ yarn config get key # 读取值
 yarn config delete key # 删除
 yarn config list # 显示当前配置
 yarn config set registry https://registry.npmmirror.com # 设置淘宝镜像
+yarn config set proxy http://localhost:10809
+yarn config set https-proxy https://localhost:10809
+yarn config delete proxy
+yarn config delete https-proxy
 ```
 
 ## 缓存

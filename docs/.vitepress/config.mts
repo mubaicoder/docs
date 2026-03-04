@@ -63,6 +63,7 @@ export default defineConfig({
                             { text: 'OpenSpec', link: '/ai/code/openspec' },
                         ] 
                     },
+                    { text: 'Skills', link: '/ai/skills' },
                     {
                         text:'Ollama',
                         link:'/ai/ollama'
@@ -183,6 +184,10 @@ export default defineConfig({
                         { text: 'Spec-Kit', link: '/ai/code/spec-kit' },
                         { text: 'OpenSpec', link: '/ai/code/openspec' },
                     ]
+                },
+                {
+                    text:'Skills',
+                    link:'/ai/skills'
                 },
                 {
                     text:'Ollama',
