@@ -12,7 +12,7 @@
 
 Runnable 是 LangChain 核心抽象接口(定义在 langchain_core.runnables)统一组件调用方式，支持 LCEL 组合，适配同步 / 异步、流式、批量等场景，是构建工作流的基础
 
-![image-20260508152731599](./assets/langchimage-20260508152731599.png)
+![image-20260508152731599](./assets/image-20260508152731599.png)
 
 一句话概括，就是将多个组件按特定顺序组合起来以便完成复杂任务的一个工作流或管道（Pipeline）
 
