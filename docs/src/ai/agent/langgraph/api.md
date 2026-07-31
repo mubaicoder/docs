@@ -864,13 +864,13 @@ Node的设计原则：
 
 - __START__节点：开始节点，确定应该首先调用哪些节点
 
-![image-20260518102020248](LangGraphAPI.assets/image-20260518102020248.png)
+![image-20260518102020248](./assets/image-20260518102020248.png)
 
 也可以通过`graph.set_entry_point("node_start")` 函数设置起始节点，等价于`graph.add_edge(START, "node_start")`
 
 - __END__节点：终止节点，表示后续没有其他节点可以继续执行了
 
-![image-20260518102053277](LangGraphAPI.assets/image-20260518102053277.png)
+![image-20260518102053277](./assets/image-20260518102053277.png)
 
 也可以通过`graph.set_finish_point("node_end")` 函数设置结束节点，等价于`graph.add_edge("node_start"， END)`
 
@@ -951,7 +951,7 @@ LangGraph还提供了错误处理和重试机制来指定重试次数、重试�
 
 为节点添加重试策略，需要在add_node中设置retry_policy参数。retry_policy参数接受一个RetryPolicy命名元组对象。默认情况下，retry_on参数使用default_retry_on函数，该函数会在遇到任何异常时重试
 
-![image-20260518102333907](LangGraphAPI.assets/image-20260518102333907.png)
+![image-20260518102333907](./assets/image-20260518102333907.png)
 
 ```python
 """
@@ -1104,19 +1104,19 @@ if __name__ == "__main__":
 
 Edge定义了节点之间的连接和执行顺序，以及不同节点之间是如何通讯的，一个节点可以有多个出边（指向多个节点），多个节点也可以指向同一个节点（Map-Reduce）
 
-![image-20260518104420675](LangGraphAPI.assets/image-20260518104420675.png)
+![image-20260518104420675](./assets/image-20260518104420675.png)
 
 Edge定义了节点之间的连接和执行顺序，以及不同节点之间是如何通讯的，一个节点可以有多个出边（指向多个节点），多个节点也可以指向同一个节点（Map-Reduce）
 
 如下是添加边的代码:
 
-![image-20260518105214590](LangGraphAPI.assets/image-20260518105214590.png)
+![image-20260518105214590](./assets/image-20260518105214590.png)
 
 关键类型：
 
-![image-20260518105239913](LangGraphAPI.assets/image-20260518105239913.png)
+![image-20260518105239913](./assets/image-20260518105239913.png)
 
-![image-20260518105248475](LangGraphAPI.assets/image-20260518105248475.png)
+![image-20260518105248475](./assets/image-20260518105248475.png)
 
 ```python
 """
@@ -1193,13 +1193,13 @@ if __name__ == "__main__":
     main()
 ```
 
-![image-20260518105308109](LangGraphAPI.assets/image-20260518105308109.png)
+![image-20260518105308109](./assets/image-20260518105308109.png)
 
 如果你想 选择性地 路由到一个或多个边（或选择性地终止），你可以使用 add_conditional_edges 方法。此方法接受一个节点名称和一个在该节点执行后调用的“路由函数”。
 
 实际应用中，工作流的下一个节点可能并不是固定的，需要根据当前的执行状态去确定需要路由到哪一个节点。条件边可以动态控制执行流程，LangGraph中可以指定路由函数，来选择具体要执行的节点（可以是多个节点）
 
-![image-20260518105407872](LangGraphAPI.assets/image-20260518105407872.png)
+![image-20260518105407872](./assets/image-20260518105407872.png)
 
 ```python
 """
@@ -1392,7 +1392,7 @@ print()
 print(app.get_graph().draw_mermaid())
 ```
 
-![image-20260518105343311](LangGraphAPI.assets/image-20260518105343311.png)
+![image-20260518105343311](./assets/image-20260518105343311.png)
 
 入口点是图启动时运行的第一个节点。你可以使用 add_edge 方法从虚拟 START 节点到要执行的第一个节点，以指定图的入口
 
@@ -1474,7 +1474,7 @@ if __name__ == "__main__":
     main()
 ```
 
-![image-20260518113307334](LangGraphAPI.assets/image-20260518113307334.png)
+![image-20260518113307334](./assets/image-20260518113307334.png)
 
 条件入口点允许你根据自定义逻辑从不同的节点开始。你可以使用虚拟 START 节点的 add_conditional_edges 来实现此功能
 
@@ -1628,15 +1628,15 @@ Map 直译是「映射」，核心行为是：「拆分 + 局部处理」。Redu
 
 Send就是动态创建多个执行分支，实现并行处理，每个Send对象都指定了一个执行目标节点和传递给该节点的参数，LangGraph会并行执行所有的这些任务,常用在Map-Reduce的场景，并行执行多个子节点并最终汇总到一个总节点。
 
-![image-20260518114506400](LangGraphAPI.assets/image-20260518114506400.png)
+![image-20260518114506400](./assets/image-20260518114506400.png)
 
 为了支持这种设计模式，LangGraph支持从条件边返回 Send 对象
 
 Send 接受两个参数：第一个是节点的名称；第二个是要传递给该节点的状态
 
-![image-20260518114608382](LangGraphAPI.assets/image-20260518114608382.png)
+![image-20260518114608382](./assets/image-20260518114608382.png)
 
-![image-20260518114616871](LangGraphAPI.assets/image-20260518114616871.png)
+![image-20260518114616871](./assets/image-20260518114616871.png)
 
 ```python
 """
@@ -1753,7 +1753,7 @@ if __name__ == "__main__":
 
 [文档](https://docs.langchain.com/oss/python/langgraph/graph-api#command)
 
-![image-20260518114657374](LangGraphAPI.assets/image-20260518114657374.png)
+![image-20260518114657374](./assets/image-20260518114657374.png)
 
 在同一个节点中既执行状态更新，又决定下一步前往哪个节点，LangGraph 提供了一种实现方式，即从节点函数返回一个 Command 对象
 
