@@ -21,7 +21,11 @@ path 里面添加：
 
 ### 换源
 
-将`C:\Users\用户名\.pyenv\pyenv-win\.versions_cache.xml`中 `https://www.python.org/ftp/python` 全换成 `https://npm.taobao.org/mirrors/python`
+- 配置环境变量：PYTHON_BUILD_MIRROR_UR = https://mirrors.huaweicloud.com/python/
+
+- 将`C:\Users\用户名\.pyenv\pyenv-win\.versions_cache.xml`删除
+
+- 执行`pyenv update`重新生成`.versions_cache.xml`文件
 
 ### 使用方法
 

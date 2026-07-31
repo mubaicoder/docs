@@ -11,27 +11,27 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' },
             // { text: 'Guide', link: '/guide' },
-            { 
+            {
                 text: 'JavaScript',
                 items: [
-                    { 
-                        text: 'Tools', 
+                    {
+                        text: 'Tools',
                         items: [
                             { text: 'pnpm', link: '/js/tools/pnpm' },
                             { text: 'npm', link: '/js/tools/npm' },
                             { text: 'yarn', link: '/js/tools/yarn' },
-                            { text: 'nvm', link: '/js/tools/nvm' },
-                        ] 
+                            { text: 'nvm', link: '/js/tools/nvm' }
+                        ]
                     },
                     { text: 'React', link: '/js/react' },
-                    { text: 'Electron', link: '/js/electron' },
+                    { text: 'Electron', link: '/js/electron' }
                 ]
             },
-            { 
+            {
                 text: 'Python',
                 items: [
-                    { 
-                        text: 'Tools', 
+                    {
+                        text: 'Tools',
                         items: [
                             { text: 'miniforge', link: '/python/tools/miniforge' },
                             { text: 'uv', link: '/python/tools/uv' },
@@ -39,38 +39,44 @@ export default defineConfig({
                             { text: 'miniconda', link: '/python/tools/miniconda' },
                             { text: 'pip', link: '/python/tools/pip' },
                             { text: 'pyenv', link: '/python/tools/pyenv' },
-                            { text: 'jupyter', link: '/python/tools/jupyter' },
-                        ] 
-                     },
-                    { text: 'Django', link: '/python/django' },
+                            { text: 'jupyter', link: '/python/tools/jupyter' }
+                        ]
+                    },
+                    { text: 'Django', link: '/python/django' }
                 ]
-             },
-            { 
+            },
+            {
                 text: 'APP',
-                items: [
-                    { text: 'Android', link: '/app/android' }
-                ]
-             },
-            { 
+                items: [{ text: 'Android', link: '/app/android' }]
+            },
+            {
                 text: 'AI',
                 items: [
-                    { 
-                        text: 'Code', 
+                    {
+                        text: 'Code',
                         items: [
                             { text: 'Qwen Code', link: '/ai/code/qwen-code' },
                             { text: 'Claude Code', link: '/ai/code/claude-code' },
                             { text: 'Spec-Kit', link: '/ai/code/spec-kit' },
-                            { text: 'OpenSpec', link: '/ai/code/openspec' },
-                        ] 
+                            { text: 'OpenSpec', link: '/ai/code/openspec' }
+                        ]
+                    },
+                    {
+                        text: 'Agent',
+                        items: [
+                            { text: 'LangChain', link: '/ai/agent/langchain/init' },
+                            { text: 'LangGraph', link: '/ai/agent/langgraph' }
+                        ]
                     },
                     { text: 'Skills', link: '/ai/skills' },
                     {
-                        text:'Ollama',
-                        link:'/ai/ollama'
+                        text: 'Ollama',
+                        link: '/ai/ollama'
                     }
                 ]
-             },
-             { text: 'Tools',
+            },
+            {
+                text: 'Tools',
                 items: [
                     { text: 'Docker', link: '/tools/docker' },
                     { text: 'Git', link: '/tools/git' },
@@ -80,9 +86,9 @@ export default defineConfig({
                     { text: 'Ubuntu', link: '/tools/ubuntu' },
                     { text: 'Centos', link: '/tools/centos' },
                     { text: 'Linux', link: '/tools/linux' },
-                    { text: 'Mac', link: '/tools/mac' },
+                    { text: 'Mac', link: '/tools/mac' }
                 ]
-             },
+            }
         ],
 
         sidebar: {
@@ -96,16 +102,16 @@ export default defineConfig({
                         { text: 'yarn', link: '/js/tools/yarn' },
                         { text: 'nvm', link: '/js/tools/nvm' },
                         { text: 'verdaccio', link: '/js/tools/verdaccio' },
-                        { text: 'lerna', link: '/js/tools/lerna' },
+                        { text: 'lerna', link: '/js/tools/lerna' }
                     ]
                 },
                 {
                     text: 'React',
-                    link: '/js/react',
+                    link: '/js/react'
                 },
                 {
                     text: 'Electron',
-                    link: '/js/electron',
+                    link: '/js/electron'
                 }
             ],
             '/python/': [
@@ -122,57 +128,57 @@ export default defineConfig({
                         { text: 'py.exe', link: '/python/tools/py-exe' },
                         { text: 'rye', link: '/python/tools/rye' },
                         { text: 'jupyter', link: '/python/tools/jupyter' },
-                        { text: 'More', link: '/python/tools/more' },
+                        { text: 'More', link: '/python/tools/more' }
                     ]
                 },
                 {
                     text: 'Django',
-                    link: '/python/django',
+                    link: '/python/django'
                 }
             ],
             '/app/': [
                 {
                     text: 'Android',
-                    link: '/app/android',
+                    link: '/app/android'
                 }
             ],
             '/tools/': [
                 {
                     text: 'Docker',
-                    link: '/tools/docker',
+                    link: '/tools/docker'
                 },
                 {
                     text: 'Git',
-                    link: '/tools/git',
+                    link: '/tools/git'
                 },
                 {
                     text: 'WSL',
-                    link: '/tools/wsl',
+                    link: '/tools/wsl'
                 },
                 {
                     text: 'Vim',
-                    link: '/tools/vim',
+                    link: '/tools/vim'
                 },
                 {
                     text: 'VS Code',
-                    link: '/tools/vscode',
+                    link: '/tools/vscode'
                 },
                 {
                     text: 'Ubuntu',
-                    link: '/tools/ubuntu',
+                    link: '/tools/ubuntu'
                 },
                 {
                     text: 'Centos',
-                    link: '/tools/centos',
+                    link: '/tools/centos'
                 },
                 {
                     text: 'Linux',
-                    link: '/tools/linux',
+                    link: '/tools/linux'
                 },
                 {
                     text: 'Mac',
-                    link: '/tools/mac',
-                },
+                    link: '/tools/mac'
+                }
             ],
             '/ai/': [
                 {
@@ -182,18 +188,42 @@ export default defineConfig({
                         { text: 'Qwen Code', link: '/ai/code/qwen-code' },
                         { text: 'Claude Code', link: '/ai/code/claude-code' },
                         { text: 'Spec-Kit', link: '/ai/code/spec-kit' },
-                        { text: 'OpenSpec', link: '/ai/code/openspec' },
+                        { text: 'OpenSpec', link: '/ai/code/openspec' }
                     ]
                 },
                 {
-                    text:'Skills',
-                    link:'/ai/skills'
+                    text: 'Agent',
+                    collapsed: false,
+                    items: [
+                        {
+                            text: 'LangChain',
+                            collapsed: false,
+                            items: [
+                                { text: 'Init', link: '/ai/agent/langchain/init' },
+                                { text: 'Model IO', link: '/ai/agent/langchain/io' },
+                                { text: 'PromptTemplate', link: '/ai/agent/langchain/prompt' },
+                                { text: 'Paser', link: '/ai/agent/langchain/paser' },
+                                { text: 'LCEL', link: '/ai/agent/langchain/lcel' },
+                                { text: 'Memory', link: '/ai/agent/langchain/memory' },
+                                { text: 'Tools', link: '/ai/agent/langchain/tools' },
+                                { text: 'Vector', link: '/ai/agent/langchain/vector' },
+                                { text: 'RAG', link: '/ai/agent/langchain/rag' },
+                                { text: 'MCP', link: '/ai/agent/langchain/mcp' },
+                                { text: 'Agent', link: '/ai/agent/langchain/agent' }
+                            ]
+                        },
+                        { text: 'LangGraph', link: '/ai/agent/langgraph' }
+                    ]
                 },
                 {
-                    text:'Ollama',
-                    link:'/ai/ollama'
+                    text: 'Skills',
+                    link: '/ai/skills'
+                },
+                {
+                    text: 'Ollama',
+                    link: '/ai/ollama'
                 }
-            ],
+            ]
         },
 
         socialLinks: [{ icon: 'github', link: 'https://github.com/mubaicoder/docs' }],

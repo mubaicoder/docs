@@ -3,24 +3,24 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Mubai Coder"
+  text: "Personal Notes"
+  tagline: ""
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Guide
+      link: /guide
+    # - theme: alt
+    #   text: About me
+    #   link: /aboutme
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Study Notes
+    details: "Knowledge acquired through systematic learning"
+  - title: Knowledge Points
+    details: "Knowledge points summarized during work"
+  - title: Other
+    details: "Other things I want to share or record"
 ---
 <script setup>
 import ContactMeComponent from './../components/ContactMeComponent.vue'

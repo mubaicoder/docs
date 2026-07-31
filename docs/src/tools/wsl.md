@@ -34,6 +34,12 @@ wsl --export <Distribution Name> <FileName>
 wsl --unregister <Distribution Name>
 # 在指定位置导入ubuntu
 wsl --import <Distribution Name> <InstallLocation> <FileName>
+
+# 或者
+# 关闭wsl服务
+wsl --shutdown
+# 使用以下命令将指定发行版移到到新的位置
+wsl --manage Ubuntu-24.04 --move D:\Programs\WSL\Ubuntu-24.04
 ```
 
 ## 卸载
