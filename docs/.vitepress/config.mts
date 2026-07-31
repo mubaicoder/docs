@@ -11,22 +11,11 @@ export default defineConfig({
         nav: [
             { text: 'Home', link: '/' },
             // { text: 'Guide', link: '/guide' },
-            {
-                text: 'JavaScript',
-                items: [
-                    {
-                        text: 'Tools',
-                        items: [
-                            { text: 'pnpm', link: '/js/tools/pnpm' },
-                            { text: 'npm', link: '/js/tools/npm' },
-                            { text: 'yarn', link: '/js/tools/yarn' },
-                            { text: 'nvm', link: '/js/tools/nvm' }
-                        ]
-                    },
-                    { text: 'React', link: '/js/react' },
-                    { text: 'Electron', link: '/js/electron' }
-                ]
-            },
+            // {
+            //     text: 'APP',
+            //     items: [{ text: 'Android', link: '/app/android' }]
+            // },
+
             {
                 text: 'Python',
                 items: [
@@ -46,12 +35,31 @@ export default defineConfig({
                 ]
             },
             {
-                text: 'APP',
-                items: [{ text: 'Android', link: '/app/android' }]
+                text: 'JavaScript',
+                items: [
+                    {
+                        text: 'Tools',
+                        items: [
+                            { text: 'pnpm', link: '/js/tools/pnpm' },
+                            { text: 'npm', link: '/js/tools/npm' },
+                            { text: 'yarn', link: '/js/tools/yarn' },
+                            { text: 'nvm', link: '/js/tools/nvm' }
+                        ]
+                    },
+                    { text: 'React', link: '/js/react' },
+                    { text: 'Electron', link: '/js/electron' }
+                ]
             },
             {
                 text: 'AI',
                 items: [
+                    {
+                        text: 'Agent',
+                        items: [
+                            { text: 'LangChain', link: '/ai/agent/langchain/index' },
+                            { text: 'LangGraph', link: '/ai/agent/langgraph/index' }
+                        ]
+                    },
                     {
                         text: 'Code',
                         items: [
@@ -59,13 +67,6 @@ export default defineConfig({
                             { text: 'Claude Code', link: '/ai/code/claude-code' },
                             { text: 'Spec-Kit', link: '/ai/code/spec-kit' },
                             { text: 'OpenSpec', link: '/ai/code/openspec' }
-                        ]
-                    },
-                    {
-                        text: 'Agent',
-                        items: [
-                            { text: 'LangChain', link: '/ai/agent/langchain/index' },
-                            { text: 'LangGraph', link: '/ai/agent/langgraph/index' }
                         ]
                     },
                     { text: 'Skills', link: '/ai/skills' },
@@ -182,16 +183,6 @@ export default defineConfig({
             ],
             '/ai/': [
                 {
-                    text: 'Code',
-                    collapsed: false,
-                    items: [
-                        { text: 'Qwen Code', link: '/ai/code/qwen-code' },
-                        { text: 'Claude Code', link: '/ai/code/claude-code' },
-                        { text: 'Spec-Kit', link: '/ai/code/spec-kit' },
-                        { text: 'OpenSpec', link: '/ai/code/openspec' }
-                    ]
-                },
-                {
                     text: 'Agent',
                     collapsed: false,
                     items: [
@@ -222,6 +213,16 @@ export default defineConfig({
                                 { text: 'A2A', link: '/ai/agent/langgraph/a2a' }
                             ]
                         }
+                    ]
+                },
+                {
+                    text: 'Code',
+                    collapsed: false,
+                    items: [
+                        { text: 'Qwen Code', link: '/ai/code/qwen-code' },
+                        { text: 'Claude Code', link: '/ai/code/claude-code' },
+                        { text: 'Spec-Kit', link: '/ai/code/spec-kit' },
+                        { text: 'OpenSpec', link: '/ai/code/openspec' }
                     ]
                 },
                 {
