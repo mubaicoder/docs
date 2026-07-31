@@ -1,4 +1,4 @@
-# 提示词模板PromptTemplate和模型调用方法
+# PromptTemplate 提示词模板和模型调用方法
 
 [提示词样例](https://api-docs.deepseek.com/zh-cn/prompt-library/)
 

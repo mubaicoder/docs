@@ -1,6 +1,6 @@
-# LangGraph入门
+# LangGraph 入门
 
-## LangGraph概述
+## 概述
 
 [官网](https://docs.langchain.com/oss/python/langgraph/overview)
 

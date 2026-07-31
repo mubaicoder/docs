@@ -1,4 +1,4 @@
-# Parser输出解析器
+# Parser 输出解析器
 
 [官方文档](https://docs.langchain.com/oss/python/langchain/models#structured-output)
 

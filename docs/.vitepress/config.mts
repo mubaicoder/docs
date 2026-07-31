@@ -193,7 +193,7 @@ export default defineConfig({
                                 { text: '入门', link: '/ai/agent/langchain/index' },
                                 { text: 'Model IO', link: '/ai/agent/langchain/io' },
                                 { text: 'PromptTemplate', link: '/ai/agent/langchain/prompt' },
-                                { text: 'Paser', link: '/ai/agent/langchain/paser' },
+                                { text: 'Parser', link: '/ai/agent/langchain/parser' },
                                 { text: 'LCEL', link: '/ai/agent/langchain/lcel' },
                                 { text: 'Memory', link: '/ai/agent/langchain/memory' },
                                 { text: 'Tools', link: '/ai/agent/langchain/tools' },

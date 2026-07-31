@@ -1,4 +1,4 @@
-# 检索增强生成 RAG
+# RAG 检索增强生成
 
 ## 什么是 RAG (Retrieval-Augmented Generation) 检索增强生成
 
