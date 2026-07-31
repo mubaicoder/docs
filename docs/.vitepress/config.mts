@@ -64,8 +64,8 @@ export default defineConfig({
                     {
                         text: 'Agent',
                         items: [
-                            { text: 'LangChain', link: '/ai/agent/langchain/init' },
-                            { text: 'LangGraph', link: '/ai/agent/langgraph' }
+                            { text: 'LangChain', link: '/ai/agent/langchain/index' },
+                            { text: 'LangGraph', link: '/ai/agent/langgraph/index' }
                         ]
                     },
                     { text: 'Skills', link: '/ai/skills' },
@@ -199,7 +199,7 @@ export default defineConfig({
                             text: 'LangChain',
                             collapsed: false,
                             items: [
-                                { text: 'Init', link: '/ai/agent/langchain/init' },
+                                { text: '入门', link: '/ai/agent/langchain/index' },
                                 { text: 'Model IO', link: '/ai/agent/langchain/io' },
                                 { text: 'PromptTemplate', link: '/ai/agent/langchain/prompt' },
                                 { text: 'Paser', link: '/ai/agent/langchain/paser' },
@@ -212,7 +212,16 @@ export default defineConfig({
                                 { text: 'Agent', link: '/ai/agent/langchain/agent' }
                             ]
                         },
-                        { text: 'LangGraph', link: '/ai/agent/langgraph' }
+                        {
+                            text: 'LangGraph',
+                            collapsed: false,
+                            items: [
+                                { text: '入门', link: '/ai/agent/langgraph/index' },
+                                { text: 'API', link: '/ai/agent/langgraph/api' },
+                                { text: '高级特性', link: '/ai/agent/langgraph/advanced' },
+                                { text: 'A2A', link: '/ai/agent/langgraph/a2a' }
+                            ]
+                        }
                     ]
                 },
                 {
