@@ -4,7 +4,7 @@
 
 [官方文档](https://docs.langchain.com/oss/python/integrations/retrievers)
 
-![image-20260512090921862](./../../../../public/agent/langchain/image-20260512090921862.png)
+![image-20260512090921862](./assets/image-20260512090921862.png)
 
 LLM 的知识仅限于它所接受的训练数据。如果你想让一个 LLM 了解特定领域的知识或专有数据，你可以:
 
@@ -12,7 +12,7 @@ LLM 的知识仅限于它所接受的训练数据。如果你想让一个 LLM �
 - 根据你的数据对LLM模型进行微调
 - RAG和模型微调相结合
 
-![image-20260512090954031](./../../../../public/agent/langchain/image-20260512090954031.png)
+![image-20260512090954031](./assets/image-20260512090954031.png)
 
 幻觉就是已读不回、已读乱回、似是而非。
 
@@ -35,13 +35,13 @@ RAG 流程分为两个不同的阶段：索引和检索
 
 #### index
 
-![image-20260512091629262](./../../../../public/agent/langchain/image-20260512091629262.png)
+![image-20260512091629262](./assets/image-20260512091629262.png)
 
-![image-20260512091645184](./../../../../public/agent/langchain/image-20260512091645184.png)
+![image-20260512091645184](./assets/image-20260512091645184.png)
 
 #### Retrieval
 
-![image-20260512091713039](./../../../../public/agent/langchain/image-20260512091713039.png)
+![image-20260512091713039](./assets/image-20260512091713039.png)
 
 ## RAG 文本处理核心知识
 
@@ -49,7 +49,7 @@ RAG 流程分为两个不同的阶段：索引和检索
 
 LangChain 框架提供了丰富的组件帮助我们搭建 RAG 应用，核心组件的介绍：
 
-![image-20260512091903333](./../../../../public/agent/langchain/image-20260512091903333.png)
+![image-20260512091903333](./assets/image-20260512091903333.png)
 
 ### RAG 标准流程
 
@@ -60,7 +60,7 @@ LangChain 框架提供了丰富的组件帮助我们搭建 RAG 应用，核心�
 5. 将相关的文档片段内容渲染到提示词模板中，作为提问问题的上下文传递给大模型，在上下文里做“阅读-理解-整合-生成”，最后把整理好的答案返回给用户
 6. 总结：RAG的核心卖点正是让生成模型利用检索到的外部知识再做一次深加工，从而给出连贯、准确且带引用的回答
 
-![image-20260512092005149](./../../../../public/agent/langchain/image-20260512092005149.png)
+![image-20260512092005149](./assets/image-20260512092005149.png)
 
 ### 文档加载器
 
@@ -70,17 +70,17 @@ LangChain 框架提供了丰富的组件帮助我们搭建 RAG 应用，核心�
 
 常用的LangChain文档加载器
 
-![image-20260512092127047](./../../../../public/agent/langchain/image-20260512092127047.png)
+![image-20260512092127047](./assets/image-20260512092127047.png)
 
 每一个文档加载器都有自己特定的参数和方法，但它们有一个统一的load()方法来完成文档的加载，load()方法会返回一个Document类的对象列表，因为这些文档加载器都继承自BaseLoader基类
 
-![image-20260512092202907](./../../../../public/agent/langchain/image-20260512092202907.png)
+![image-20260512092202907](./assets/image-20260512092202907.png)
 
 代码继承关系
 
-![image-20260512092219220](./../../../../public/agent/langchain/image-20260512092219220.png)
+![image-20260512092219220](./assets/image-20260512092219220.png)
 
-![image-20260512092230169](./../../../../public/agent/langchain/image-20260512092230169.png)
+![image-20260512092230169](./assets/image-20260512092230169.png)
 
 Document文档类：文档加载器无论从什么来源进行文档加载，最终都是为了将文档信息解析为Document对象，Document类中，主要包含两个重要属性：
 
@@ -230,7 +230,7 @@ print(docs)
 
 LangChain提供了多种文本分割器，常用切分策略
 
-![image-20260512095422561](./../../../../public/agent/langchain/image-20260512095422561.png)
+![image-20260512095422561](./assets/image-20260512095422561.png)
 
 大部分文本分割器都继承自TextSplitter基类，该基类定义了分割文本的核心方法：
 
@@ -240,7 +240,7 @@ LangChain提供了多种文本分割器，常用切分策略
 
 RecursiveCharacterTextSplitter(递归字符文本切分器)
 
-![image-20260512101551561](./../../../../public/agent/langchain/image-20260512101551561.png)
+![image-20260512101551561](./assets/image-20260512101551561.png)
 
 #### split_text
 
@@ -466,7 +466,7 @@ ids = vector_store.add_texts(texts, metadata)
 print(ids[0:5])
 ```
 
-![image-20260512104525931](./../../../../public/agent/langchain/image-20260512104525931.png)
+![image-20260512104525931](./assets/image-20260512104525931.png)
 
 查询结果：
 

@@ -43,7 +43,7 @@ LangGraph和LangChain对比：LangGraph是基于LangChain构建的，无论图�
 
 刚才这个过程充满了循环（(loops）、判断(decisions)和分支（branches）。他会根据当前草稿的状态，来决定下一步是该”重新搜索”、”重新组织”还是”提交工作”。
 
-![image-20260513135526426](./../../../../public/agent/langgraph/image-20260513135526426.png)
+![image-20260513135526426](./assets/image-20260513135526426.png)
 
 用LangChain的Chain来模拟上述过程，会变得极其痛苦！因为Chain天生就是一条单行线，它很难实现”返回上一步”或者”根据条件跳转到某一步”这种灵活的控制流。开发者需要写大量的、非常不优雅的”胶水代码”来强行实现循环，整个逻辑会变得一团糟。
 
@@ -66,11 +66,11 @@ Agent的最大问题在于，它是一个“黑箱”！你给了它目标和工
 
 人机协作(HITL)：将人类决策融入工作流关键节点，构建可信AI系统
 
-![image-20260513140703547](./../../../../public/agent/langgraph/image-20260513140703547.png)
+![image-20260513140703547](./assets/image-20260513140703547.png)
 
 多智能体协作：分层规划与共创协作两种模式，模拟现实团队工作方式
 
-![image-20260513140715561](./../../../../public/agent/langgraph/image-20260513140715561.png)
+![image-20260513140715561](./assets/image-20260513140715561.png)
 
 **总结**
 
@@ -84,17 +84,17 @@ LangGraph 能够无缝集成各种外部工具（如搜索引擎、数据库、A
 
 模块化与可复用性。每个节点都可以是一个独立的、可复用的组件，维护性高且易于扩展。通过子图机制，复杂的工作流可以被分解为多个可独立开发和测试的模块，提高了开发和测试效率
 
-![image-20260513141248247](./../../../../public/agent/langgraph/image-20260513141248247.png)
+![image-20260513141248247](./assets/image-20260513141248247.png)
 
 ## 作用
 
 彻底打破了“链”的束缚，引入了“图”的结构，让构建复杂AI应用的可能性，从一条直线，变成了一张网。
 
-![image-20260513141321722](./../../../../public/agent/langgraph/image-20260513141321722.png)
+![image-20260513141321722](./assets/image-20260513141321722.png)
 
 ## 技术架构
 
-![image-20260514161227960](./../../../../public/agent/langgraph/image-20260514161227960.png)
+![image-20260514161227960](./assets/image-20260514161227960.png)
 
 ## 如何使用
 
@@ -104,7 +104,7 @@ LangGraph 能够无缝集成各种外部工具（如搜索引擎、数据库、A
 
 **State(状态)、Nodes（节点)、Edges(边)、Graph(图)**
 
-![image-20260513141428192](./../../../../public/agent/langgraph/image-20260513141428192.png)
+![image-20260513141428192](./assets/image-20260513141428192.png)
 
 可视化：LangGraph 提供了多种图表可视化方式，帮助开发者更好地理解和调试工作流。通过 `graph.get_graph()` 方法可以获取图的结构信息，包括节点和边的详细信息。
 
@@ -189,11 +189,11 @@ To resolve this issue:
 
 Mermaid代码可视化结果
 
-![image-20260515102000322](./../../../../public/agent/langgraph/image-20260515102000322.png)
+![image-20260515102000322](./assets/image-20260515102000322.png)
 
 生成的图片：
 
-![langgraph864aa19d](./../../../../public/agent/langgraph/langgraph864aa19d.png)
+![langgraph864aa19d](./assets/langgraph864aa19d.png)
 
 加一点业务
 
@@ -335,7 +335,7 @@ with open(output_path, "wb") as f:
 print(f"图片已生成：{output_path}")
 ```
 
-![langgraphfd22357f](./../../../../public/agent/langgraph/langgraphfd22357f.png)
+![langgraphfd22357f](./assets/langgraphfd22357f.png)
 
 **图的构建流程总结：**
 

@@ -64,7 +64,7 @@ print(chain.invoke({"question": "你知道我是谁吗?"}))
 2. 在链执行完毕后，将用户的输入和大语言模型输出，一起写入到记忆组件中
 3. 下一次调用大语言模型时，重复这个过程。
 
-![image-20260509103010225](./../../../../public/agent/langchain/image-20260509103010225.png)
+![image-20260509103010225](./assets/image-20260509103010225.png)
 
 ## 实现类介绍 v0.3 和 v1.0+
 
@@ -103,7 +103,7 @@ RunnableWithMessageHistory 是 LangChain 推荐的替代方案，优势包括：
 
 常用的消息历史组件以及它们的特性：
 
-![image-20260509103559320](./../../../../public/agent/langchain/image-20260509103559320.png)
+![image-20260509103559320](./assets/image-20260509103559320.png)
 
 InMemoryChatMessageHistory
 
@@ -306,7 +306,7 @@ RedisStack是什么?
 
 Redis Stack 是 Redis Labs推出的一个**"增强版 Redis"，不是Redis的替代品，而是在原生Redis 基础上的功能扩展包**，专为构建现代实时应用而设计
 
-![image-20260509141350836](./../../../../public/agent/langchain/image-20260509141350836.png)
+![image-20260509141350836](./assets/image-20260509141350836.png)
 
 RedisStack核心组件：
 
@@ -429,4 +429,4 @@ while True:
 
 对话存入到了redis中
 
-![image-20260509134327189](./../../../../public/agent/langchain/image-20260509134327189.png)
+![image-20260509134327189](./assets/image-20260509134327189.png)

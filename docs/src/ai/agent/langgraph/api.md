@@ -4,9 +4,9 @@
 
 [文档](https://docs.langchain.com/oss/python/langgraph/graph-api#graphs)
 
-![image-20260515110318699](./../../../../public/agent/langgraph/image-20260515110318699.png)
+![image-20260515110318699](./assets/image-20260515110318699.png)
 
-![image-20260515110310961](./../../../../public/agent/langgraph/image-20260515110310961.png)
+![image-20260515110310961](./assets/image-20260515110310961.png)
 
 图的构建流程：
 
@@ -83,7 +83,7 @@ print(app.get_graph().draw_mermaid())
 
 在LangGraph中，State是一个贯穿整个工作流执行过程中的共享数据的结构，代表当前快照，
 
-![image-20260515110532342](./../../../../public/agent/langgraph/image-20260515110532342.png)
+![image-20260515110532342](./assets/image-20260515110532342.png)
 
 它存储了从工作流开始到结束的所有必要的信息（历史对话、检索到的文档、工具执行结果等），在各个节点中共享，且每个节点都可以修改。
 
@@ -137,11 +137,11 @@ print("执行结果：", result)
 
 [文档](https://docs.langchain.com/oss/javascript/langgraph/graph-api#schema)
 
-![image-20260515111343477](./../../../../public/agent/langgraph/image-20260515111343477.png)
+![image-20260515111343477](./assets/image-20260515111343477.png)
 
 构成三要素：
 
-![image-20260515111355315](./../../../../public/agent/langgraph/image-20260515111355315.png)
+![image-20260515111355315](./assets/image-20260515111355315.png)
 
 **state_schema**：图的完整内部状态，包含了所有节点可能读写的字段，必须指定，不能为空
 
@@ -157,7 +157,7 @@ print("执行结果：", result)
 
 State可以是TypedDict类型，也可以是pydantic中的BaseModel类型
 
-![image-20260515112010719](./../../../../public/agent/langgraph/image-20260515112010719.png)
+![image-20260515112010719](./assets/image-20260515112010719.png)
 
 一句话选型
 
@@ -782,7 +782,7 @@ print(result)
 
 Node是LangGraph中的一个基本处理单元，代表工作流中的一个操作步骤，可以是一个Agent、调用大模型、工具或一个函数（说白了就是绑定一个python函数，具体逻辑可以干任何事情）
 
-![image-20260515173035372](./../../../../public/agent/langgraph/image-20260515173035372.png)
+![image-20260515173035372](./assets/image-20260515173035372.png)
 
 ```python
 from functools import partial

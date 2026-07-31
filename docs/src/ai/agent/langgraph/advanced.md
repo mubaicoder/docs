@@ -23,7 +23,7 @@ langchain流式输出，它主要是处理回复的长篇文字信息内容； l
 
 就像选功能开关一样，用的时候指定 “模式” 就行
 
-![image-20260519101823896](./../../../../public/agent/langgraph/image-20260519101823896.png)
+![image-20260519101823896](./assets/image-20260519101823896.png)
 
 - values：每步结束后，输出完整的当前状态（比如 “主题：冰淇淋和猫；笑话：xxx”）；
 - updates：每步结束后，只输出变化的部分（比如只显示 “主题新增了‘和猫’”）；
@@ -448,7 +448,7 @@ for chunk in graph.stream({"query": "example"}, stream_mode=["values", "custom"]
 
  短期记忆（Checkpointer）
 
-![image-20260519104230659](./../../../../public/agent/langgraph/image-20260519104230659.png)
+![image-20260519104230659](./assets/image-20260519104230659.png)
 
 - 载体：Checkpointer（MemorySaver、RedisSaver、PostgresSaver…）
 
@@ -576,7 +576,7 @@ if __name__ == "__main__":
 
 案例2：数据库检查点(sqlite)
 
-![image-20260519104521230](./../../../../public/agent/langgraph/image-20260519104521230.png)
+![image-20260519104521230](./assets/image-20260519104521230.png)
 
 ```python
 """
@@ -918,7 +918,7 @@ if __name__ == "__main__":
 
 在LangGraph中允许将一个完整的图作为另一个图的节点，适用于将复杂的任务拆解为多个专业智能体协同完成，每个子图都可以独立开发、测试并且可以复用。每个子图都可以拥有自己的私有数据，也可以与父图共享数据。
 
-![image-20260519105923562](./../../../../public/agent/langgraph/image-20260519105923562.png)
+![image-20260519105923562](./assets/image-20260519105923562.png)
 
 ```python
 """

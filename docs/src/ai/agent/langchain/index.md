@@ -37,7 +37,7 @@ model = init_chat_model(
 
 ## 接入示例
 
-![image-20260423220318234](./../../../../public/agent/langchain/image-20260423220318234.png)
+![image-20260423220318234](./assets/image-20260423220318234.png)
 
 ```python
 # 1.导入依赖

@@ -5,7 +5,7 @@
 LangChain 的 Model I/O 模块是与大模型进行交互的核心组件
 Model I/O：标准化各个大模型的输入和输出，包含输入模版，模型本身和格式化输出。
 
-![image-20260506154812863](./../../../../public/agent/langchain/image-20260506154812863.png)
+![image-20260506154812863](./assets/image-20260506154812863.png)
 
 ## model io 三件套
 
@@ -26,7 +26,7 @@ LangChain模型接口可参考[官方文档](https://reference.langchain.com/pyt
 
 LangChain中将大语言模型分为以下几种，我们主要使用的是聊天对话模型
 
-![image-20260506154636172](./../../../../public/agent/langchain/image-20260506154636172.png)
+![image-20260506154636172](./assets/image-20260506154636172.png)
 
 ## model io 模型参数
 
@@ -34,15 +34,15 @@ LangChain中将大语言模型分为以下几种，我们主要使用的是聊�
 
 在构建聊天模型时init_chat_model，有一些标准化参数
 
-![image-20260506155404278](./../../../../public/agent/langchain/image-20260506155404278.png)
+![image-20260506155404278](./assets/image-20260506155404278.png)
 
 以上的标准参数，也只是适用于部分的大语言模型，有些参数在特定模型中可能是无效的，这些标准化参数仅对 LangChain 官方提供集成包的模型（如 langchain-openai、langchain-anthropic）生效，在langchain-community包中的第三方模型，则不需要遵守这些标准化参数的规则。
 
-![image-20260506155441908](./../../../../public/agent/langchain/image-20260506155441908.png)
+![image-20260506155441908](./assets/image-20260506155441908.png)
 
 ### temperature 随机性控制器
 
-![image-20260506155553811](./../../../../public/agent/langchain/image-20260506155553811.png)
+![image-20260506155553811](./assets/image-20260506155553811.png)
 
 ## model io 模型返回
 
@@ -50,11 +50,11 @@ Message组件
 
 调用模型后返回了一条AI消息:  AIMessage
 
-![image-20260506155753329](./../../../../public/agent/langchain/image-20260506155753329.png)
+![image-20260506155753329](./assets/image-20260506155753329.png)
 
 所有消息都有 type 、 content 、 response_metadata 等属性
 
-![image-20260506155902158](./../../../../public/agent/langchain/image-20260506155902158.png)
+![image-20260506155902158](./assets/image-20260506155902158.png)
 
 ## 接入大模型
 

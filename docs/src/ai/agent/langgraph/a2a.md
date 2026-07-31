@@ -121,11 +121,11 @@ response["messages"][-1].pretty_print()
 
 多智能体架构：
 
-![image-20260519113544084](./../../../../public/agent/langgraph/image-20260519113544084.png)
+![image-20260519113544084](./assets/image-20260519113544084.png)
 
 常见的智能体连接方式
 
-![image-20260519113611482](./../../../../public/agent/langgraph/image-20260519113611482.png)
+![image-20260519113611482](./assets/image-20260519113611482.png)
 
 #### Network（网络型）
 
@@ -213,7 +213,7 @@ response["messages"][-1].pretty_print()
 
 #### 总结对比
 
-![image-20260519113925235](./../../../../public/agent/langgraph/image-20260519113925235.png)
+![image-20260519113925235](./assets/image-20260519113925235.png)
 
 ## A2A 案例
 
@@ -227,7 +227,7 @@ Supervisor 架构模仿了企业中“项目经理”的角色。它采用经典
 
 由一个中心的主管代理（Supervisor）负责接收用户任务，并将其分解、委派给各个专业的工作者代理（Worker Agents），并最终整合结果。
 
-![image-20260520100208896](./../../../../public/agent/langgraph/image-20260520100208896.png)
+![image-20260520100208896](./assets/image-20260520100208896.png)
 
 LangGraph提供了专门的Supervisor Python库
 
@@ -239,7 +239,7 @@ uv add langgraph-supervisor
 
 流程说明
 
-![image-20260520100302248](./../../../../public/agent/langgraph/image-20260520100302248.png)
+![image-20260520100302248](./assets/image-20260520100302248.png)
 
 v0.3 版本
 
@@ -770,7 +770,7 @@ if __name__ == "__main__":
 
 [文档1](https://agentskills.io/what-are-skills)、[文档2](https://developers.openai.com/codex/skills/)
 
-![image-20260520100523818](./../../../../public/agent/langgraph/image-20260520100523818.png)
+![image-20260520100523818](./assets/image-20260520100523818.png)
 
 可以把 Agent 想象成一位厨师，而 Agent Skills 就是厨师掌握的各种烹饪技法（刀工、炒、蒸、烤等）和厨房工具（锅、铲、烤箱等）。
 
@@ -780,28 +780,28 @@ if __name__ == "__main__":
 
 没有厨师，技法只是闲置的工具；没有技法，厨师也无法完成烹饪。两者结合，才能做出美味的菜肴。
 
-![image-20260520101158091](./../../../../public/agent/langgraph/image-20260520101158091.png)
+![image-20260520101158091](./assets/image-20260520101158091.png)
 
-![image-20260520101207538](./../../../../public/agent/langgraph/image-20260520101207538.png)
+![image-20260520101207538](./assets/image-20260520101207538.png)
 
-![image-20260520101215441](./../../../../public/agent/langgraph/image-20260520101215441.png)
+![image-20260520101215441](./assets/image-20260520101215441.png)
 
-![image-20260520101222981](./../../../../public/agent/langgraph/image-20260520101222981.png)
+![image-20260520101222981](./assets/image-20260520101222981.png)
 
-![image-20260520101232177](./../../../../public/agent/langgraph/image-20260520101232177.png)
+![image-20260520101232177](./assets/image-20260520101232177.png)
 
-![image-20260520101238953](./../../../../public/agent/langgraph/image-20260520101238953.png)
+![image-20260520101238953](./assets/image-20260520101238953.png)
 
-![image-20260520101248375](./../../../../public/agent/langgraph/image-20260520101248375.png)
+![image-20260520101248375](./assets/image-20260520101248375.png)
 
 skills 官方说法就是 **渐进式披露三层架构**
 
 简单
 
-![image-20260520101331268](./../../../../public/agent/langgraph/image-20260520101331268.png)
+![image-20260520101331268](./assets/image-20260520101331268.png)
 
 复杂
 
-![image-20260520101346299](./../../../../public/agent/langgraph/image-20260520101346299.png)
+![image-20260520101346299](./assets/image-20260520101346299.png)
 
 **总结：提示词的规范化+工程化规约落地实现，类似提示词版本的maven结构**

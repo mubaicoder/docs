@@ -4,11 +4,11 @@
 
 ## Prompt
 
-![image-20260507143028566](./../../../../public/agent/langchain/image-20260507143028566.png)
+![image-20260507143028566](./assets/image-20260507143028566.png)
 
  先从最简单的API调用说起
 
-![image-20260507143055201](./../../../../public/agent/langchain/image-20260507143055201.png)
+![image-20260507143055201](./assets/image-20260507143055201.png)
 
 可以近似的理解
 
@@ -24,18 +24,18 @@ Prompt演化历程:
 
 ### SpringAI
 
-![image-20260507145109624](./../../../../public/agent/langchain/image-20260507145109624.png)
+![image-20260507145109624](./assets/image-20260507145109624.png)
 
 - system：设定AI行为边界/角色/定位。指导AI的行为和响应方式，设置AI如何解释和回复输入的
 - user：用户原始提问输入。代表用户的输入他们向AI提出的问题、命令或陈述。
 - assistant：AI返回的响应信息，定义为”助手角色”消息。用它可以确保上下文能够连贯的交互。记忆对话，积累回答。
 - tool：桥接外部服务，可以进行函数调用如，支付/数据查询等操作，类似调用第3方util工具类，后面章节详细介绍
 
-![image-20260507145305188](./../../../../public/agent/langchain/image-20260507145305188.png)
+![image-20260507145305188](./assets/image-20260507145305188.png)
 
 总结
 
-![image-20260507145639176](./../../../../public/agent/langchain/image-20260507145639176.png)
+![image-20260507145639176](./assets/image-20260507145639176.png)
 
 ### LangChain
 
@@ -43,7 +43,7 @@ Prompt演化历程:
 
 - SystemMessage：系统消息，type为"system"，告诉大模型当前的背景是什么，应该如何做，并不是所有模型提供商都支持这个消息类型
 
-![image-20260507145911909](./../../../../public/agent/langchain/image-20260507145911909.png)
+![image-20260507145911909](./assets/image-20260507145911909.png)
 
 - HumanMessage：人类消息，type为"user"，表示来自用户输入。
 - AIMessage：表示模型输出的内容类型，type为"ai"，这可以是文本，也可以是调用工具的请求。
@@ -51,7 +51,7 @@ Prompt演化历程:
 
 总结
 
-![image-20260507145927898](./../../../../public/agent/langchain/image-20260507145927898.png)
+![image-20260507145927898](./assets/image-20260507145927898.png)
 
 ```python
 from langchain.messages import SystemMessage, HumanMessage, AIMessage, ToolMessage
@@ -72,11 +72,11 @@ print(messages)
 
 ### LangChain v0.3 和 v1.0 对比
 
-![image-20260507150034118](./../../../../public/agent/langchain/image-20260507150034118.png)
+![image-20260507150034118](./assets/image-20260507150034118.png)
 
 ## 模型调用方法
 
-![image-20260507150229190](./../../../../public/agent/langchain/image-20260507150229190.png)
+![image-20260507150229190](./assets/image-20260507150229190.png)
 
 - 普通调用
   - invoke： 普通调用，处理单条输入，等待LLM完全推理完成后再返回调用结果
@@ -349,7 +349,7 @@ if __name__ == "__main__":
 
 总结
 
-![image-20260507150644654](./../../../../public/agent/langchain/image-20260507150644654.png)
+![image-20260507150644654](./assets/image-20260507150644654.png)
 
 ## PromptTemplate提示词模板
 
@@ -393,7 +393,7 @@ if __name__ == '__main__':
 
 PromptTemplate 针对文本生成模型的提示词模板，也是LangChain提供的最基础的模板，通过格式化字符串生成提示词，在执行invoke时将变量格式化到提示词模板中
 
-![image-20260507151256131](./../../../../public/agent/langchain/image-20260507151256131.png)
+![image-20260507151256131](./assets/image-20260507151256131.png)
 
 主要参数：
 
@@ -682,7 +682,7 @@ print(prompt2)  # 请用一句话介绍LangChain，要求通俗易懂 内容不�
 
 ChatPromptTemplate 是 LangChain 中专门用于**结构化聊天对话提示**的核心组件，它比普通 `PromptTemplate` 更适合处理多角色、多轮次的对话场景。为与现代聊天模型的交互提供了一种上下文丰富和会话友好的方式
 
-![image-20260507152736772](./../../../../public/agent/langchain/image-20260507152736772.png)
+![image-20260507152736772](./assets/image-20260507152736772.png)
 
 参数类型：列表参数格式是tuple类型（ role :str,content :str 组合最常用）
 
@@ -690,7 +690,7 @@ ChatPromptTemplate 是 LangChain 中专门用于**结构化聊天对话提示**�
 
 其中 role 是：字符串（如 “system” 、“human” 、“ai” ）
 
-![image-20260507152757818](./../../../../public/agent/langchain/image-20260507152757818.png)
+![image-20260507152757818](./assets/image-20260507152757818.png)
 
 创建提示词ChatPromptTemplate：
 
@@ -830,7 +830,7 @@ print(result.content)
 
 ChatPromptTemplate实例化参数类型：前面说了ChatPromptTemplate的两种创建方式。我们看到不管使用构造方法，参数类型都是列表类型。参数除了是列表类型，列表的元素可以是字符串、字典、字符串构成的元组、消息类型、提示词模板类型、消息提示词模板类型等
 
-![image-20260507152903834](./../../../../public/agent/langchain/image-20260507152903834.png)
+![image-20260507152903834](./assets/image-20260507152903834.png)
 
 - tuple
 

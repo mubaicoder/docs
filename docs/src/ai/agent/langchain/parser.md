@@ -10,7 +10,7 @@
 
 此时，LangChain提供的输出解析器就派上用场了。输出解析器（Output Parser）负责获取 model 的输出并将其转换为更合适的格式。这在应用开发中极其重要。
 
-![image-20260508095553771](./../../../../public/agent/langchain/image-20260508095553771.png)
+![image-20260508095553771](./assets/image-20260508095553771.png)
 
 ## 什么是输出解析器
 
@@ -25,7 +25,7 @@
 
 ## 输出解析器分类
 
-![image-20260508095833472](./../../../../public/agent/langchain/image-20260508095833472.png)
+![image-20260508095833472](./assets/image-20260508095833472.png)
 
 ## 输出解析器的两大方法
 
@@ -251,9 +251,9 @@ logger.info(
 
 Python3.8+标准库- TypedDict
 
-![image-20260508110836820](./../../../../public/agent/langchain/image-20260508110836820.png)
+![image-20260508110836820](./assets/image-20260508110836820.png)
 
-![image-20260508110840969](./../../../../public/agent/langchain/image-20260508110840969.png)
+![image-20260508110840969](./assets/image-20260508110840969.png)
 
 ```python
 from typing import Annotated, TypedDict
@@ -286,9 +286,9 @@ typing.Annotated的设计目的并不是在程序运行时对数据进行合法�
 
 Python3.9+标准库- Annotated
 
-![image-20260508110901278](./../../../../public/agent/langchain/image-20260508110901278.png)
+![image-20260508110901278](./assets/image-20260508110901278.png)
 
-![image-20260508110906793](./../../../../public/agent/langchain/image-20260508110906793.png)
+![image-20260508110906793](./assets/image-20260508110906793.png)
 
 ```python
 from typing import Annotated

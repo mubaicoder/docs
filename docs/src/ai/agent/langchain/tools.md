@@ -8,7 +8,7 @@
 
 一些官方文档：[LangChain](https://docs.langchain.com/oss/python/langchain/tools)、[LangChain内置工具列表](https://docs.langchain.com/oss/python/integrations/tools)、[SpringAI](https://docs.spring.io/spring-ai/reference/api/tools.html)、[SpringAI Alibba](https://java2ai.com/docs/1.0.0.2/tutorials/basics/tool-calling/?spm=5176.29160081.0.0.2856aa5cgvn0gm)
 
-![image-20260509143814117](./../../../../public/agent/langchain/image-20260509143814117.png)
+![image-20260509143814117](./assets/image-20260509143814117.png)
 
 > 一句话总结：LLM的外部utils工具类
 
@@ -25,19 +25,19 @@ Tools 是什么？
 
 ## Tools 工作流程
 
-![image-20260509144300207](./../../../../public/agent/langchain/image-20260509144300207.png)
+![image-20260509144300207](./assets/image-20260509144300207.png)
 
 ## 自定义Tool
 
 1. 使用@tool装饰器
 
-![image-20260509144354689](./../../../../public/agent/langchain/image-20260509144354689.png)
+![image-20260509144354689](./assets/image-20260509144354689.png)
 
 2. Tool常用属性
 
-![image-20260509144417920](./../../../../public/agent/langchain/image-20260509144417920.png)
+![image-20260509144417920](./assets/image-20260509144417920.png)
 
-![image-20260509144425529](./../../../../public/agent/langchain/image-20260509144425529.png)
+![image-20260509144425529](./assets/image-20260509144425529.png)
 
 案例，定义一个两数相加的tool：
 
@@ -131,7 +131,7 @@ logger.info(res)
 
 在发送信息给大模型的时候，携带着“工具”列表，这些工具列表代表着大模型能使用的工具。当大模型遇到用户提出的问题时，会先思考是否应该调用工具解决问题，如果需要调用工具，和普通消息不同，这种情况下会返回“function_call”类型的消息，请求方根据返回结果调用对应的工具得到工具输出，然后将之前的信息加上工具输出的信息一起发送给大模型，让大模型整合起来综合判断给出结果。
 
-![image-20260509145755387](./../../../../public/agent/langchain/image-20260509145755387.png)
+![image-20260509145755387](./assets/image-20260509145755387.png)
 
 需求：实现了一个天气查询功能。通过调用OpenWeather API获取指定城市的实时天气数据，并将结果以自然语言形式输出。
 

@@ -23,7 +23,7 @@ Agent 是一个决策引擎，决定什么时候调用哪个 Tool，根据上下
 
 **Agent = LLM + Memory + Tools + Planning + Action**
 
-![image-20260512145428037](./../../../../public/agent/langchain/image-20260512145428037.png)
+![image-20260512145428037](./assets/image-20260512145428037.png)
 
 ```python
 import os
@@ -184,9 +184,9 @@ track_react_cycle(result1["messages"])
 
 为什么有了Tool 还需要 Agent？
 
-![image-20260512145529084](./../../../../public/agent/langchain/image-20260512145529084.png)
+![image-20260512145529084](./assets/image-20260512145529084.png)
 
-![image-20260512145606080](./../../../../public/agent/langchain/image-20260512145606080.png)
+![image-20260512145606080](./assets/image-20260512145606080.png)
 
 - Tool 就像“工具箱里的螺丝刀、锤子”
 
@@ -196,15 +196,15 @@ track_react_cycle(result1["messages"])
 
 两者对比
 
-![image-20260512145710533](./../../../../public/agent/langchain/image-20260512145710533.png)
+![image-20260512145710533](./assets/image-20260512145710533.png)
 
 第一个智能体组装
 
-![image-20260512145738730](./../../../../public/agent/langchain/image-20260512145738730.png)
+![image-20260512145738730](./assets/image-20260512145738730.png)
 
 ## v0.3版本的工作原理
 
-![image-20260512145808281](./../../../../public/agent/langchain/image-20260512145808281.png)
+![image-20260512145808281](./assets/image-20260512145808281.png)
 
 在LangChain的Agents实际架构中，Agent的角色是接收输入并决定采取的操作，但它本身并不直接执行这些操作。这一任务是由AgentExecutor来完成的。将Agent（决策大脑）与AgentExecutor（执行操作的Runtime）结合使用，才构成了完整的Agents（智能体），其中AgentExecutor负责调用代理并执行指定的工具，以此来实现整个智能体的功能。
 
@@ -319,7 +319,7 @@ print(result)
 
 ## v1.0版本的工作原理
 
-![image-20260512150024535](./../../../../public/agent/langchain/image-20260512150024535.png)
+![image-20260512150024535](./assets/image-20260512150024535.png)
 
 ```python
 import os

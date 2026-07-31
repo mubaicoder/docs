@@ -91,7 +91,7 @@ Chain结构主要由三部分构成
 
 ### RunnableSequence-顺序链
 
-![image-20260508155559990](./../../../../public/agent/langchain/image-20260508155559990.png)
+![image-20260508155559990](./assets/image-20260508155559990.png)
 
 ```python
 """

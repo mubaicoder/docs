@@ -4,37 +4,37 @@
 
 ### 什么是向量
 
-![image-20260511140640299](./../../../../public/agent/langchain/image-20260511140640299.png)
+![image-20260511140640299](./assets/image-20260511140640299.png)
 
 ### 文本视频图片向量化
 
-![image-20260511144007217](./../../../../public/agent/langchain/image-20260511144007217.png)
+![image-20260511144007217](./assets/image-20260511144007217.png)
 
 [官网-嵌入模型 (Embedding Model)](https://docs.langchain.com/oss/python/integrations/text_embedding)、[Top integrations](https://docs.langchain.com/oss/python/integrations/text_embedding#top-integrations)
 
-![image-20260511144045548](./../../../../public/agent/langchain/image-20260511144045548.png)
+![image-20260511144045548](./assets/image-20260511144045548.png)
 
 案例1：
 
-![image-20260511144137926](./../../../../public/agent/langchain/image-20260511144137926.png)
+![image-20260511144137926](./assets/image-20260511144137926.png)
 
-![image-20260511144150768](./../../../../public/agent/langchain/image-20260511144150768.png)
+![image-20260511144150768](./assets/image-20260511144150768.png)
 
 案例2：对比图片
 
-![image-20260511144225183](./../../../../public/agent/langchain/image-20260511144225183.png)
+![image-20260511144225183](./assets/image-20260511144225183.png)
 
-![image-20260511144232353](./../../../../public/agent/langchain/image-20260511144232353.png)
+![image-20260511144232353](./assets/image-20260511144232353.png)
 
 总结
 
-![image-20260511144411673](./../../../../public/agent/langchain/image-20260511144411673.png)
+![image-20260511144411673](./assets/image-20260511144411673.png)
 
 ### 向量数据库
 
 [官网-向量存储(Vector Store)](https://docs.langchain.com/oss/python/integrations/vectorstores)
 
-![image-20260511144559565](./../../../../public/agent/langchain/image-20260511144559565.png)
+![image-20260511144559565](./assets/image-20260511144559565.png)
 
 一种专门用于存储、管理和检索向量数据（即高维数值数组）的数据库系统。其核心功能是通过高效的索引结构和相似性计算算法，支持大规模向量数据的快速查询与分析，向量数据库维度越高，查询精准度也越高，查询效果也越好。
 
@@ -55,11 +55,11 @@
 
 ### 知识图谱
 
-![image-20260511145000520](./../../../../public/agent/langchain/image-20260511145000520.png)
+![image-20260511145000520](./assets/image-20260511145000520.png)
 
 ### 常用的向量数据库
 
-![image-20260511145030137](./../../../../public/agent/langchain/image-20260511145030137.png)
+![image-20260511145030137](./assets/image-20260511145030137.png)
 
 也可以**用redisStack作为向量存储**，在记忆缓存中有做笔记
 
@@ -341,5 +341,5 @@ for res in results:
 
 查看redis中的数据
 
-![image-20260511153416094](./../../../../public/agent/langchain/image-20260511153416094.png)
+![image-20260511153416094](./assets/image-20260511153416094.png)
 
