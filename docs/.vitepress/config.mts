@@ -233,6 +233,24 @@ export default defineConfig({
                     text: 'Ollama',
                     link: '/ai/ollama'
                 }
+            ],
+            '/o/': [
+                {
+                    text: 'Lang',
+                    link: '/o/lang'
+                },
+                {
+                    text: 'Mysql',
+                    link: '/o/mysql'
+                },
+                {
+                    text: 'RabbitMQ',
+                    link: '/o/rabbitmq'
+                },
+                {
+                    text: 'Redis',
+                    link: '/o/redis'
+                }
             ]
         },
 
