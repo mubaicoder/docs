@@ -250,6 +250,10 @@ export default defineConfig({
                 {
                     text: 'Redis',
                     link: '/o/redis'
+                },
+                {
+                    text: 'Python',
+                    link: '/o/python'
                 }
             ]
         },
